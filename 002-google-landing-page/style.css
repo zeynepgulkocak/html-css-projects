@@ -56,15 +56,14 @@ main {
   padding: auto;
 }
 #app-icon {
+  opacity: 0.5;
   vertical-align: middle; 
   text-decoration: none;
 }
-#app-img{
-  opacity: 0.5;
-}
-#app-img:hover {
+#app-icon:hover {
   opacity: 1;
 }
+
 #mag {
   width: 30px;
   height: 30px;
