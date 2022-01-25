@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/gfavicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Google</title>
+  </head>
+  <body>
+    <header>
+      <!-- Header Left -->
+      <nav id="header-left">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+      </nav>
+      <!-- Header Right -->
+      <nav id="header-right">
+        <a href="https://www.google.com/intl/tr/gmail/about/#">Gmail</a>
+        <a href="https://www.google.com.tr/imghp?hl=tr&ogbl">Images</a>
+        <a href="#" id="app-icon">
+          <img src="./images/appicon.png" alt="app-icon" id="app-img" />
+          <img src="./images/app.png" alt="" id="app" />
+        </a>
+        <!-- Javascript -->
+        <script>
+          var appIcon = document.getElementById("app-icon");
+          var app=document.getElementById("app");
+          appIcon.onclick = function () {
+            if(app.style.display=="none")
+            {
+              app.style.display="flex";
+              appIcon.style.opacity=1;
+            }
+            else{
+              appIcon.style.opacity=0.5;
+              app.style.display="none";
+            }
+            // document.getElementById("app").style.display="flex";
+            // document.getElementById("app-icon").style.opacity=1;
+          };
+        </script>
+
+        <button id="btn-sign">Sign In</button>
+        <div></div>
+      </nav>
+      <div class="clr"></div>
+    </header>
+    <main>
+      <img src="./images/googlelogo.png" alt="" id="img-google" />
+      <!-- Search Bar -->
+      <div id="search-bar">
+        <img
+          src="./images/magnifying_glass.jpg"
+          alt="magnifying-glass"
+          id="mag"
+        />
+        <input type="text" name="search" id="search" />
+        <a href="#"
+          ><img
+            src="./images/google_microphone.png"
+            alt="microphone"
+            id="microphone"
+        /></a>
+      </div>
+      <!-- Button Container -->
+      <div id="btn-container">
+        <button id="btn-search">Google Search</button>
+        <button id="btn-feeling">I'm Feeling Lucky</button>
+      </div>
+      <!-- Language -->
+      <div id="lag-box">
+        <p id="lang">
+          Other Languages you can use Google: <a href="#">English</a>
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div id="country">Turkey</div>
+      <!-- Footer Left -->
+      <nav id="footer-left">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search Works</a>
+      </nav>
+      <!-- Footer Right -->
+      <nav id="footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+      </nav>
+    </footer>
+  </body>
+</html>
