@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+/* background container */
+.background-container--img1,
+.background-container--img2,
+.background-container--img3,
+.background-container--img4 {
+  min-height: 100vh;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  box-sizing: border-box;
+}
+
+/* background images */
+.background-container--img1 {
+  background-image: url(./images/bg.jpg);
+}
+.background-container--img2 {
+  background-image: url(./images/bg2.jpg);
+}
+.background-container--img3 {
+  background-image: url(./images/bg3.jpg);
+}
+.background-container--img4 {
+  background-image: url(./images/bg4.jpg);
+}
+
+/* heading containers */
+.heading-container {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: white;
+}
+.heading-container__heading--big {
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  outline: 0.5rem inset purple;
+  outline-offset: 1rem;
+  background-color: black;
+  line-height: 5rem;
+  padding: 2rem;
+}
+.heading-container__heading--small {
+  border-top-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  outline: 0.4rem inset purple;
+  outline-offset: 0.2rem;
+  background-color: black;
+  line-height: 5rem;
+  padding: 0.7rem;
+}
+
+/* sections */
+section {
+  text-align: center;
+  padding: 3rem 5rem;
+}
+.section--light {
+  background-color: rgb(241, 241, 241);
+  color: #666;
+}
+.section--dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.25rem 0;
+}
+.heading-container__heading--logo {
+  width: 30%;
+  margin: 1rem;
+}
+/* media querys */
+@media (max-width: 760px) {
+  .heading-container {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 568px) {
+  .background-container--img1,
+  .background-container--img2,
+  .background-container--img3,
+  .background-container--img4 {
+    background-attachment: scroll;
+  }
+}
