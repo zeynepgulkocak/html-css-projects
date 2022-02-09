@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mon, Arial, Helvetica, sans-serif;
+}
+
+#checkout-title {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 15px 0;
+  display: block;
+}
+main {
+  position: relative;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  display:grid;
+  grid-template-columns: 465px 320px;
+  margin: 35px 0;
+}
+/* Main-Left Panel */
+
+main form {
+  position: relative;
+  width: 88%;
+  margin-right: 100px;
+}
+h1 {
+  font-size: 18px;
+  color: #333;
+  margin: 15px 0;
+}
+#contact-information {
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  display:block;
+  position: relative
+}
+.campo {
+  display:flex;
+  flex-direction: column;
+  margin: 5px 0;
+  position: relative;
+  font-size:12px;
+}
+.input-field {
+  margin: 8px 0px;
+}
+.input-field i{
+    position: absolute;
+        color: #828282;
+        font-size: 16px;
+        top: 50%;
+        left: 3%;
+}
+#shipping-address {
+    margin-top: 50px;
+}
+input{
+  padding: 7px 5px 7px 35px;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  width: 100%;
+  color: #828282;
+  font-size: 14px;
+}
+#user-reminder {
+  display: inline-block;
+  margin-right: 10px;
+}
+#user-reminder~label {
+    display: inline-block;
+    margin-left: -195px;
+}
+#user-check-box{
+  display: flex;
+flex-direction: row;
+left:-198px;
+}
+#country-field {
+    display: inline-block;
+    margin-right: 2%;
+}
+select{
+    border: none;
+    padding:8px 5px 8px 35px;
+    border-radius: 5px;
+    border: 1px solid #828282;
+}
+#postal-code-field {
+    display: inline-block;
+    width: 60%;
+}
+.data-container{
+    position: relative;
+        display: block;
+}
+
+#btn-submit {
+    width: 20%;
+    padding: 14px 0;
+    border-radius: 10px;
+    background-color: #f2994a;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin-right: -50px;
+}
+/* Main-Right Panel */
+
+.products-preview {
+  position: relative;
+  margin-right:-40px;
+}
+.product-painel {
+  position: absolute;
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display:flex;
+  flex-wrap: wrap;
+}
+.product {
+    position: relative;
+    width:100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+img {
+  width: 30%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.product-info{
+    width:100%;
+}
+.product-info h2 {
+    font-size: 16px;
+    color: #4E5150;
+    margin: 5px 0;
+}
+.product-info p{
+    font-size: 12px;
+    color: #4E5150;
+    margin: 5px 0;   
+}
+strong{
+    color: #f2994a;
+    font-size: 16px;
+    font-weight: 600;
+}
+.quantity-controller button, p {
+    position: relative;
+    display: block;
+}
+.quantity-controller {
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 25px;
+}
+.quantity-controller button{
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.quantity-controller p{
+    line-height: 24px;
+}
+.quantity-controller button i{
+    font-size: 12px;
+}
+.buy-detail {
+  margin: 5px 0;
+  border-top: 1px solid #bdbdbd;
+  width: 90%;
+  display:flex;
+  justify-content:center;
+position: relative;
+}
+.buy-detail p{
+    display: block;
+    width:50%;
+}
+.buy-detail p:nth-child(2){
+    text-align: right;
+}
+#shipping {
+  margin-top: 50px;
+}
+@font-face{
+    font-family: Mon;
+    src: url('FONTS/Montserrat-Regular.ttf');
+}
+
+@media (max-width: 540px) {
+  main {
+      grid-template-columns: 100%;
+      width: 90%;
+      grid-template-rows: 400px 1fr;
+      grid-template-areas: "top" "bottom";
+  }
+  main form {
+      width: 95%;
+      left: 0;
+      transform: unset;
+      margin-right: 0;
+  }
+  form {
+      grid-area: bottom;
+  }
+  .products-preview {
+      width: 100%;
+      grid-area: top;
+
+  }
+  .product-painel {
+      padding: 0;
+  }
+  #btn-submit {
+      width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top:20px;
+  }
+  #postal-code-field {
+      width: 100%;
+  }
+  .product {
+      padding: 0 15px;
+  }
+  .buy-detail {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  #user-reminder {
+    margin-right: 0px;
+
+  }
+  #user-reminder~label {
+      margin-left: -90px;
+      width:100%;
+  }
+  #user-check-box{
+    display: flex;
+  flex-direction: row;
+  left:-100px;
+  margin: auto;
+  }
+}
